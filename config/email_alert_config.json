@@ -1,0 +1,9 @@
+{
+    "email_on_failure": true,
+    "email": ["alerts@example.com"],
+    "retries": 3,
+    "retry_delay_minutes": 10,
+    "execution_timeout_minutes": 60,
+    "slack_webhook_placeholder": "https://hooks.slack.com/services/your/webhook/url"
+  }
+  
