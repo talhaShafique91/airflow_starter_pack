@@ -42,11 +42,14 @@ docker-compose up --build
 ```
 
 4. **Access Airflow UI**
+```bash
 Open http://localhost:8080
 
 Login: airflow / airflow
-
+```
 5. **Trigger the DAG**
+```bash
 Manually trigger the DAG etl_airflow_starter_pack
 
 Use failure simulation to test retries, alerts, and timeout
+```
