@@ -2,7 +2,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.utils.dates import days_ago
 from datetime import timedelta
-from slack_alerts import slack_alert  # ✅ Updated import
+from slack_alerts import slack_alert
 
 default_args = {
     'owner': 'airflow',
