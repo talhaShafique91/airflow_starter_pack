@@ -42,14 +42,36 @@ docker-compose up --build
 ```
 
 4. **Access Airflow UI**
-```bash
-Open http://localhost:8080
 
-Login: airflow / airflow
-```
+- Open http://localhost:8080
+
+- Login: airflow / airflow
+
 5. **Trigger the DAG**
-```bash
-Manually trigger the DAG etl_airflow_starter_pack
 
-Use failure simulation to test retries, alerts, and timeout
-```
+- Manually trigger the DAG etl_airflow_starter_pack
+
+- Use failure simulation to test retries, alerts, and timeout
+
+## 🧪 How to Test Features
+
+- Raise `Exception()` in the DAG to test retry & Slack/email alerts  
+- Add `time.sleep(4000)` to test execution timeout  
+- Set `slack_webhook` in Airflow Variables to enable Slack alerts  
+- Use Gmail + App Password to receive email alerts  
+
+## 👥 Who Is This For?
+
+- Data engineers setting up Airflow from scratch  
+- Startups that want alerting & monitoring baked in  
+- Anyone tired of silent DAG failures
+
+---
+
+## 📬 Support
+
+Open an issue or DM me on [LinkedIn](https://linkedin.com/in/talhashafique)
+
+---
+
+Built with ❤️ by [@talhaShafique91](https://github.com/talhaShafique91)
